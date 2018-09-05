@@ -1,0 +1,21 @@
+easy_admin:
+    site_name: PsychoTest Admin
+    entities:
+        Element:
+            class: App\Entity\Element
+        Psychotest:
+            class: App\Entity\Psychotest
+        Question:
+            class: App\Entity\Question
+        Response:
+            class: App\Entity\Response
+            list:
+                fields:
+                    - Question
+                    - Response
+            form:
+                fields:
+                    - Question
+                    - Response
+        Score:
+            class: App\Entity\Score
